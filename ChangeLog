@@ -1,5 +1,8 @@
 2014-99-99  João Távora  <joaotavora@gmail.com>
 
+	* slime.el (slime-backend, slime-swank-loader-backend): The former
+	is an obsoletion alias to the latter.
+
 	* swank-loader.lisp (*load-path*): Moved up to avoid forward
 	reference.
 
