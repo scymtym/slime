@@ -518,6 +518,9 @@ information."
                       (sb-c:compiler-error  :error)
                       (reader-error         :read-error)
                       (error                :error)
+                      (sb-ext:early-deprecation-warning :early-deprecation-warning)
+                      (sb-ext:late-deprecation-warning :late-deprecation-warning)
+                      (sb-ext:final-deprecation-warning :final-deprecation-warning)
                       #+#.(swank/backend:with-symbol redefinition-warning
                             sb-kernel)
                       (sb-kernel:redefinition-warning
